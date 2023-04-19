@@ -1,0 +1,15 @@
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\bin\Debug\net6.0\teste-c-sharp.exe
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\bin\Debug\net6.0\teste-c-sharp.deps.json
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\bin\Debug\net6.0\teste-c-sharp.runtimeconfig.json
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\bin\Debug\net6.0\teste-c-sharp.dll
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\bin\Debug\net6.0\teste-c-sharp.pdb
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\teste-c-sharp.csproj.AssemblyReference.cache
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\teste-c-sharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\teste-c-sharp.AssemblyInfoInputs.cache
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\teste-c-sharp.AssemblyInfo.cs
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\teste-c-sharp.csproj.CoreCompileInputs.cache
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\teste-c-sharp.dll
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\refint\teste-c-sharp.dll
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\teste-c-sharp.pdb
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\teste-c-sharp.genruntimeconfig.cache
+C:\projetos-devaria\teste-c-sharp\teste-c-sharp\teste-c-sharp\obj\Debug\net6.0\ref\teste-c-sharp.dll
