@@ -61,6 +61,13 @@ int BonificarParticipacao(int pontuacaoatual)
     return pontuacaoatual;
 }
 
+void ExemploArrays()
+{
+    int[] notas = { 78, 67, 15, 220, 35, 49, 225 };
+
+    List<int> notasdaprova = new List<int>() { 6, 7, 8, 10, 9, 7 };
+}
+
 void ExemploForEach() // void === sem retorno
 {
     string[] jogadores = { "Daniel Castello", "Rafael", "Filipe", "Kaique", "Rodrigo", "Luis", "Leon", "Fulano" };
@@ -84,28 +91,43 @@ void ExemploFor() // void === sem retorno
 
 void ExemploDoWhile()
 {
-    Console.WriteLine("Qual a sua pontuação atual?");
-    int pontuacaojogador = Convert.ToInt32(Console.ReadLine());
-    if (pontuacaojogador < 27)
+    string mensagem = "";
+    try
     {
-        do
+        Console.WriteLine("Qual a sua pontuação atual?");
+        int pontuacaojogador = Convert.ToInt32(Console.ReadLine());
+
+        if (pontuacaojogador < 27)
         {
-            Console.WriteLine("Jogando!");
-            Console.WriteLine("Você ganhou? (S/N)")
-            string ganhou = Console.ReadLine();
-            if (ganhou == "S")
-                pontuacaojogador = pontuacaojogador + 3;
-            }
-            else
+            do
             {
-                Console.WriteLine("Infelizmente você está fora do torneio");
-                break;
-            }
-        } while (pontuacaojogador < 27);
-        Console.WriteLine("Você já está nas quartas, parabéns!");
+                Console.WriteLine("Jogando!");
+                Console.WriteLine("Você ganhou? (S/N)");
+                string ganhou = Console.ReadLine();
+                if (ganhou == "S")
+                {
+                    pontuacaojogador = pontuacaojogador + 3;
+                }
+                else
+                {
+                    mensagem = "Infelizmente você está fora do torneio";
+                    break;
+                }
+            } while (pontuacaojogador < 27);
+
+            mensagem = "Você já está nas quartas!";
+        }
+        else
+        {
+            mensagem = "Você já está nas quartas!";
+        }
     }
-    else
+    catch (Exception ex)
     {
-        Console.WriteLine("Você já está nas quartas, parabéns!");
+        mensagem = "Aconteceu o seguinte erro: " + ex.Message;
+    }
+    finally
+    {
+        Console.WriteLine(mensagem);
     }
 }
