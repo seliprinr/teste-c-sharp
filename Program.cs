@@ -2,6 +2,9 @@
 
 Console.WriteLine("Bem-vindos ao torneio de Poker!");
 
+ExemploFor();
+ExemploDoWhile();
+
 Console.WriteLine("Qual o nome do jogador?");
 
 nomejogador = Console.ReadLine().ToString();
@@ -56,4 +59,53 @@ int BonificarParticipacao(int pontuacaoatual)
     pontuacaoatual++;
 
     return pontuacaoatual;
+}
+
+void ExemploForEach() // void === sem retorno
+{
+    string[] jogadores = { "Daniel Castello", "Rafael", "Filipe", "Kaique", "Rodrigo", "Luis", "Leon", "Fulano" };
+
+    foreach(string jogador in jogadores)
+    {
+        Console.WriteLine("Bem-vindos as quartas de final " + jogador);
+    }
+}
+
+void ExemploFor() // void === sem retorno
+{
+    string[] jogadores = { "Daniel Castello", "Rafael", "Filipe", "Kaique", "Rodrigo", "Luis", "Leon", "Fulano" };
+
+    for (int contajogador = 0; contajogador < 8; contajogador++)
+    {
+        Console.WriteLine("Bem-vindos as quartas de final " + jogadores[contajogador]);
+    }
+}
+
+
+void ExemploDoWhile()
+{
+    Console.WriteLine("Qual a sua pontuação atual?");
+    int pontuacaojogador = Convert.ToInt32(Console.ReadLine());
+    if (pontuacaojogador < 27)
+    {
+        do
+        {
+            Console.WriteLine("Jogando!");
+            Console.WriteLine("Você ganhou? (S/N)")
+            string ganhou = Console.ReadLine();
+            if (ganhou == "S")
+                pontuacaojogador = pontuacaojogador + 3;
+            }
+            else
+            {
+                Console.WriteLine("Infelizmente você está fora do torneio");
+                break;
+            }
+        } while (pontuacaojogador < 27);
+        Console.WriteLine("Você já está nas quartas, parabéns!");
+    }
+    else
+    {
+        Console.WriteLine("Você já está nas quartas, parabéns!");
+    }
 }
