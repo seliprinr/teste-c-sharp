@@ -1,30 +1,59 @@
-﻿const string textoolamundo = "Hey!"
-string nomecompleto;
-int idade;
+﻿string nomejogador;
 
-Console.WriteLine("Qual o seu nome completo?");
+Console.WriteLine("Bem-vindos ao torneio de Poker!");
 
-nomecompleto = Console.ReadLine().ToString();
+Console.WriteLine("Qual o nome do jogador?");
 
-Console.WriteLine("Qual a sua idade?");
+nomejogador = Console.ReadLine().ToString();
 
-idade = Convert.ToInt32(Console.ReadLine());
-
-//if (idade == 34 && nomecompleto == "Rodrigo Seliprin")
-//{
-//    Console.WriteLine(textoolamundo + nomecpmpleto + "que tem" + idade + "anos");
-//}
-//else
-//{
-//    Console.WriteLine("Você errou a idade e/ou o nome");
-//}
+bool validacaojogador;
 
 
-switch(nomecompleto)
+switch(nomejogador)
 {
-    case "Daniel Castello": Console.WriteLine("Professor de C#"); break;
-    case "Rafael": Console.WriteLine("Professor de Vue.Js"); break;
-    case "Filipe": Console.WriteLine("Professor de Python"); break;
-    case "Kaique": Console.WriteLine("Professor de Kotlin"); break;
-    default: Console.WriteLine("Não possuímos esse professor"); break;
+    case "Daniel Castello":
+    case "Rafael": 
+    case "Filipe": 
+    case "Kaique":
+    case "Rodrigo":
+    case "Luis":
+    case "Leon":
+    case "Fulano":
+        Console.WriteLine("Jogador autorizado para o torneio de Poker");
+        validacaojogador = true;
+        break;
+    default:
+        Console.WriteLine("Jogador não autorizado para o torneio de Poker");
+        validacaojogador = false;
+            break;
+}
+
+if (validacaojogador)
+{
+    Console.WriteLine("Quantas vitórias você conquistou?");
+    int vitorias = Convert.ToInt32(Console.ReadLine());
+    int pontuacaoatual = VerificarPontuacao(vitorias);
+    Console.WriteLine("Você possui " + pontuacaoatual.ToString() + " pontos no torneio");
+    int pontuacaonova = BonificarParticipacao(pontuacaoatual);
+    Console.WriteLine("Parabéns, você ganhou 1 ponto de bônus. Agora sua pontuação é " + pontuacaoatual.ToString());
+}
+
+
+// metodo de verificacao da pontuacao do jogador
+int VerificarPontuacao (int vitorias)
+{
+    const int = fatorvitoria = 3;
+
+    int pontuacao = fatorvitoria * vitorias;
+
+    return pontuacao;
+}
+
+// metodo de bonificacao de participacao
+int BonificarParticipacao(int pontuacaoatual)
+{
+    int pontuacaonova = pontuacaoatual;
+    pontuacaoatual++;
+
+    return pontuacaoatual;
 }
